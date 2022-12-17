@@ -6,7 +6,7 @@ import sys
 
 
 '''------------------以下に各情報を入力----------------------------'''
-Chrome_path = ''
+Chrome_driver_path = ''
 mail = ''
 passwd = ''
 telephone = ''
@@ -17,7 +17,7 @@ set_time = datetime.time(0, 0, 0) #時間入力(h, m, s)
 
 options = Options()
 options.add_argument('--headless')
-driver = webdriver.Chrome(Chrome_path, options=options)
+driver = webdriver.Chrome(Chrome_driver_path, options=options)
 driver.get('https://v1-account.epark.jp/auth?client_id=epark_faspa&redirect_uri=https%3A%2F%2Fepark.jp%2Fv2auth&state=UPjCsS4CvRVBn8MknPsFj0lDP433Yu2yvudgn00c&new_mem_back_uri=https%3A%2F%2Fepark.jp%2F')
 
 
